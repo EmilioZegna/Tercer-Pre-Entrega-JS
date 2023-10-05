@@ -1,0 +1,19 @@
+h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-color: orange;
+    
+}
