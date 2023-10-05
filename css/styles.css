@@ -19,6 +19,7 @@ a {
 
 aside {
     padding: 2rem;
+    padding-right: 0;
     color: white;
     position: sticky;
     top: 0;
@@ -31,6 +32,54 @@ aside {
 .logoPrincipal {
     font-weight: 400;
     font-size: 1.3rem;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.botones {
+    background-color: transparent;
+    border: 0;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    gap: 1rem;
+    font-weight: 600;
+    font-size: 0.80rem;
+    padding: 1.2rem;
+}
+
+.botones.active {
+    background-color: black;
+    color: white;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    position: relative;
+}
+
+.botones.active::before {
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: 2rem;
+    bottom: 100%;
+    right: 0;
+    border-bottom-right-radius: 0.5rem;
+    box-shadow: 0 1rem 0 black;
+}
+
+.botones.active::after {
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: 2rem;
+    top: 100%;
+    right: 0;
+    border-top-right-radius: 0.5rem;
+    box-shadow: 0 -1rem 0 black;
 }
 
 .textoDelFooter {
