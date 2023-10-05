@@ -1,0 +1,180 @@
+[
+    {
+        "id": "futbol-01",
+        "titulo": "Guantes",
+        "imagen": "./assets/Imagen Futbol 01.webp",
+        "categoria": {
+            "nombre": "Futbol",
+            "id": "futbol"
+        },
+        "precio": 5000
+    },
+    
+    {
+        "id": "futbol-02",
+        "titulo": "Camiseta",
+        "imagen": "./assets/Imagen Futbol02.webp",
+        "categoria": {
+            "nombre": "Futbol",
+            "id": "futbol"
+        },
+        "precio": 8000
+    },
+    
+    {
+        "id": "futbol-03",
+        "titulo": "Botines",
+        "imagen": "./assets/Imagen Futbol 03.webp",
+        "categoria": {
+            "nombre": "Futbol",
+            "id": "futbol"
+        },
+        "precio": 9000
+    },
+    
+    {
+        "id": "futbol-04",
+        "titulo": "Jogging",
+        "imagen": "./assets/Imagen Futbol 04.webp",
+        "categoria": {
+            "nombre": "Futbol",
+            "id": "futbol"
+        },
+        "precio": 3000
+    },
+
+    {
+        "id": "futbol-05",
+        "titulo": "Campera",
+        "imagen": "./assets/Imagen Futbol 05.webp",
+        "categoria": {
+            "nombre": "Futbol",
+            "id": "futbol"
+        },
+        "precio": 10000
+    },
+
+    {
+        "id": "futbol-06",
+        "titulo": "Pelota",
+        "imagen": "./assets/Imagen Futbol 06.webp",
+        "categoria": {
+            "nombre": "Futbol",
+            "id": "futbol"
+        },
+        "precio": 9000
+    },
+
+    {
+        "id": "rugby-01",
+        "titulo": "Botines",
+        "imagen": "./assets/Imagen Rugby 01.webp",
+        "categoria": {
+            "nombre": "Rugby",
+            "id": "rugby"
+        },
+        "precio": 9000
+    },
+
+    {
+        "id": "rugby-02",
+        "titulo": "Shorts",
+        "imagen": "./assets/Imagen Rugby 02.webp",
+        "categoria": {
+            "nombre": "Rugby",
+            "id": "rugby"
+        },
+        "precio": 2000
+    },
+
+    {
+        "id": "rugby-03",
+        "titulo": "Casco",
+        "imagen": "./assets/Imagen Rugby 03.webp",
+        "categoria": {
+            "nombre": "Rugby",
+            "id": "rugby"
+        },
+        "precio": 5000
+    },
+
+    {
+        "id": "rugby-04",
+        "titulo": "Protector",
+        "imagen": "./assets/Imagen Rugby 04.webp",
+        "categoria": {
+            "nombre": "Rugby",
+            "id": "rugby"
+        },
+        "precio": 1500
+    },
+
+    {
+        "id": "rugby-05",
+        "titulo": "Pelota",
+        "imagen": "./assets/Imagen Rugby 05.webp",
+        "categoria": {
+            "nombre": "Rugby",
+            "id": "rugby"
+        },
+        "precio": 12000
+    },
+    
+    {
+        "id": "rugby-06",
+        "titulo": "Ty",
+        "imagen": "./assets/Imagen Rugby 06.webp",
+        "categoria": {
+            "nombre": "Rugby",
+            "id": "rugby"
+        },
+        "precio": 4000
+    },
+
+    {
+        "id": "tenis-01",
+        "titulo": "Zapatillas",
+        "imagen": "./assets/Imagen Tenis 01.webp",
+        "categoria": {
+            "nombre": "Tenis",
+            "id": "tenis"
+        },
+        "precio": 7500
+    },
+
+    {
+        "id": "tenis-02",
+        "titulo": "Raqueta",
+        "imagen": "./assets/Imagen Tenis 02.webp",
+        "categoria": {
+            "nombre": "Tenis",
+            "id": "tenis"
+        },
+        "precio": 15000
+    },
+
+    {
+        "id": "tenis-03",
+        "titulo": "Gorra",
+        "imagen": "./assets/Imagen Tenis 03.webp",
+        "categoria": {
+            "nombre": "Tenis",
+            "id": "tenis"
+        },
+        "precio": 1000
+    },
+
+    {
+        "id": "tenis-04",
+        "titulo": "Medias",
+        "imagen": "./assets/Imagen Tenis 04.webp",
+        "categoria": {
+            "nombre": "Tenis",
+            "id": "tenis"
+        },
+        "precio": 3500
+    }
+
+
+
+]
