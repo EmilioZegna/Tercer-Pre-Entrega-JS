@@ -17,3 +17,142 @@ ul {
 a {
     text-decoration: none;
 }
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-color: rgb(10, 65, 183);
+}
+
+aside {
+    padding: 2rem;
+    padding-right: 0;
+    color: antiquewhite;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.botones {
+    background-color: transparent;
+    border: 0;
+    color: antiquewhite;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    gap: 1rem;
+    font-weight: 600;
+    padding: 1rem;
+    font-size: 0.85rem;
+}
+
+.botones.activo {
+    background-color: white;
+    color: rgb(10, 65, 183);
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    position: relative;
+}
+
+.botones.activo::before {
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: 2rem;
+    bottom: 100%;
+    right: 0;
+    border-bottom-right-radius: 1rem;
+    box-shadow: 0 1rem 0 white;
+}
+
+.botones.activo::after {
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: 2rem;
+    top: 100%;
+    right: 0;
+    border-top-right-radius: 1rem;
+    box-shadow: 0 -1rem 0 white;
+}
+
+.botonCarrito {
+    margin-top: 50px;
+}
+
+.footer {
+    color: whitesmoke;
+    font-size: 0.85rem;
+}
+
+main {
+    background-color: white;
+    margin: 1rem;
+    margin-left: 0;
+    border-radius: 2rem;
+    padding: 3rem;
+}
+
+.tituloPrincipal {
+    color: black;
+    margin-bottom: 2rem;
+}
+
+.contenedorProductos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.imagenProducto {
+    max-width: 100%;
+    border-radius: 1rem;
+}
+
+.detallesProducto {
+    background-color: rgb(10, 65, 183);
+    color: antiquewhite;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    margin-top: -2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.tituloProducto {
+    font-size: 1rem;
+}
+
+.botonAgregar {
+    border: 0;
+    background-color: white;
+    color: rgb(10, 65, 183);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.botonAgregar:hover {
+    background-color: rgb(10, 65, 183);
+    color: white;
+    transition: 2s;
+}
+
