@@ -8,5 +8,95 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+
+    <div class="contenedor">
+        <aside>
+            <header>
+                <h1 class="logo">Shop</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li>
+                        <a class="botones botonVolver" href="./index.html">
+                            <i class="bi bi-box-arrow-left"></i>Seguir la compra.
+                        </a>
+                    </li>
+                    <li>
+                        <a class="botones botonCarrito activo" href="./carrito.html">
+                            <i class="bi bi-cart3"></i>Carrito
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <footer>
+                <p class="footer">Copyright © 2023 | Derechos de autor</p>
+            </footer>
+        </aside>
+        <main>
+            <h2 class="tituloPrincipal">Carrito</h2>
+            <div class="contendorCarrito">
+                <p class="carritoVacio">Tu carrito esta vacio. <i class="bi bi-heartbreak-fill"></i></p>
+                
+                <div class="productosCarrito">
+                    
+                    <div class="productoCarrito">
+                        <img src="./assets/Imagen Futbol 01.webp" alt="">
+                        <div class="tituloProductoCarrito">
+                            <small>Titulo</small>
+                            <h3>Guantes</h3>
+                        </div>
+                        <div class="cantidadProducto">
+                            <small>Cantidad</small>
+                            <p>1</p>
+                        </div>
+                        <div class="precioProductoCarrito">
+                            <small>Precio</small>
+                            <p>$5000</p>
+                        </div>
+                        <div class="subtotalCarrito">
+                            <small>Subtotal</small>
+                            <p>$5000</p>
+                        </div>
+                    <button class="eliminarProducto"><i class="bi bi-trash-fill"></i></button>
+                    </div>
+                    
+                    <div class="productoCarrito">
+                        <img src="./assets/Imagen Futbol02.webp" alt="">
+                        <div class="tituloProductoCarrito">
+                            <small>Titulo</small>
+                            <h3>Camiseta</h3>
+                        </div>
+                        <div class="cantidadProducto">
+                            <small>Cantidad</small>
+                            <p>2</p>
+                        </div>
+                        <div class="precioProductoCarrito">
+                            <small>Precio</small>
+                            <p>$9000</p>
+                        </div>
+                        <div class="subtotalCarrito">
+                            <small>Subtotal</small>
+                            <p>$18000</p>
+                        </div>
+                    <button class="eliminarProducto"><i class="bi bi-trash-fill"></i></button>
+                    </div>
+                
+                </div>
+                <div class="accionesCarrito">
+                    <div class="izquierdaCarrito">
+                        <button class="vaciarCarrito">Vaciar carrito.</button>
+                    </div>
+                    <div class="derechaCarrito">
+                        <div class="totalCarrito">
+                            <p>El total es:</p>
+                            <p id="total">$27000</p>
+                            <button class="comprarCarrito">Finalizar compra</button>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </main>
+    </div>
 </body>
 </html>
