@@ -17,15 +17,15 @@
             <nav>
                 <ul class="menu">
                     <li>
-                        <button class="botones botonesMenu activo"><i class="bi bi-caret-right-fill"></i>Productos</button>
+                        <button id="todos" class="botones botonesMenu activo"><i class="bi bi-caret-right-fill"></i>Productos</button>
                     </li>
                     <li>
-                        <button class="botones botonesMenu"><i class="bi bi-caret-right"></i>Futbol</button></li>
+                        <button id="futbol" class="botones botonesMenu"><i class="bi bi-caret-right"></i>Futbol</button></li>
                     <li>
-                        <button class="botones botonesMenu"><i class="bi bi-caret-right"></i>Rugby</button>
+                        <button id="rugby" class="botones botonesMenu"><i class="bi bi-caret-right"></i>Rugby</button>
                     </li>
                     <li>
-                        <button class="botones botonesMenu"><i class="bi bi-caret-right"></i>Tenis</button>
+                        <button id="tenis" class="botones botonesMenu"><i class="bi bi-caret-right"></i>Tenis</button>
                     </li>
                     <li>
                         <a class="botones botonCarrito" href="./carrito.html">
@@ -40,41 +40,12 @@
         </aside>
         <main>
             <h2 class="tituloPrincipal">Productos</h2>
-            <div class="contenedorProductos">
-                <div class="producto">
-                    <img class="imagenProducto" src="./assets/Imagen Futbol 01.webp" alt="">
-                    <div class="detallesProducto">
-                        <h3 class="tituloProducto">Guantes</h3>
-                        <p class="precioProducto">$5000</p>
-                        <button class="botonAgregar">AGREGAR</button>
-                    </div>
-                </div>
-                <div class="producto">
-                    <img class="imagenProducto" src="./assets/Imagen Futbol02.webp" alt="">
-                    <div class="detallesProducto">
-                        <h3 class="tituloProducto">Camiseta</h3>
-                        <p class="precioProducto">$9000</p>
-                        <button class="botonAgregar">AGREGAR</button>
-                    </div>
-                </div>
-                <div class="producto">
-                    <img class="imagenProducto" src="./assets/Imagen Futbol 03.webp" alt="">
-                    <div class="detallesProducto">
-                        <h3 class="tituloProducto">Pelota</h3>
-                        <p class="precioProducto">$3000</p>
-                        <button class="botonAgregar">AGREGAR</button>
-                    </div>
-                </div>
-                <div class="producto">
-                    <img class="imagenProducto" src="./assets/Imagen Futbol 04.webp" alt="">
-                    <div class="detallesProducto">
-                        <h3 class="tituloProducto">Jogging</h3>
-                        <p class="precioProducto">$7000</p>
-                        <button class="botonAgregar">AGREGAR</button>
-                    </div>
-                </div>
+            <div id="contenedorProductos" class="contenedorProductos">
+
             </div>
         </main>
     </div>
+
+    <script src="./JS/main.js"></script>
 </body>
 </html>
