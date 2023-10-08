@@ -8,8 +8,9 @@ fetch("./JS/productos.json")
     })
 
 const contenedorProductos = document.querySelector("#contenedorProductos");
-const botonesMenu = document.querySelectorAll(".botonesMenu")
-const tituloPrincipal = document.querySelector("#tituloPrincipal")
+const botonesMenu = document.querySelectorAll(".botonesMenu");
+const tituloPrincipal = document.querySelector("#tituloPrincipal");
+let botonesAgregar = document.querySelectorAll(".botonAgregar");
 
 function cargarProductos(productosSeleccionados) {
     contenedorProductos.innerHTML = "";
@@ -49,4 +50,5 @@ botonesMenu.forEach(boton => {
         }
         
     })
-})
+});
+
