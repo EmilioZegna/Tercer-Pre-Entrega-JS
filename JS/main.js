@@ -65,9 +65,10 @@ function botonAgregarFuncionando() {
 
 let productosAgregados;
 
-const productosAgregadosLS = JSON.parse(localStorage.getItem("productosAgregados"));
+let productosAgregadosLS = localStorage.getItem("productosAgregados");
+
 if (productosAgregadosLS) {
-    productosAgregados = productosAgregadosLS;
+    productosAgregados = JSON.parse(productosAgregadosLS);
     sumarProductos();
 } else {
     productosAgregados = [];

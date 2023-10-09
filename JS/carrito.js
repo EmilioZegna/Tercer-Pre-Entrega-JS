@@ -1,4 +1,5 @@
-const productosAgregados = JSON.parse(localStorage.getItem("productosAgregados"));
+let productosAgregados = localStorage.getItem("productosAgregados");
+productosAgregados = JSON.parse(productosAgregados)
 
 const carritoVacio = document.querySelector("#carritoVacio");
 const productosEnCarrito = document.querySelector("#productosCarrito");
@@ -8,7 +9,8 @@ let botonesEliminar = document.querySelectorAll(".eliminarProducto");
 
 
 function cargarProductosCarrito() {
-    if (productosAgregados) {
+    if (productosAgregados && productosAgregados.length > 0) {
+
         carritoVacio.classList.add("desabilitado");
         productosEnCarrito.classList.remove("desabilitado");
         accionesCarrito.classList.remove("desabilitado");
@@ -56,7 +58,7 @@ function cargarProductosCarrito() {
 cargarProductosCarrito();
 
 function botonEliminarFuncionando() {
-    botonesEliminar = document.querySelectorAll(".eliminarProductos");
+    botonesEliminar = document.querySelectorAll(".eliminarProducto");
 
     botonesEliminar.forEach(boton => {
         boton.addEventListener("click", eliminarCarrito);
@@ -65,10 +67,12 @@ function botonEliminarFuncionando() {
 
 function eliminarCarrito(e) {
     const botonId = e.currentTarget.id;    
-    const index = productosEnCarrito.findIndex(producto => producto.id === botonId);
+    const index = productosAgregados.findIndex(producto => producto.id === botonId);
    
-    productosEnCarrito.splice(index, 1);
+    productosAgregados.splice(index, 1);
     cargarProductosCarrito();
 
-    localStorage.setItem("productosCarrito", productosEnCarrito)
+    console.log(cargarProductosCarrito);
+
+    localStorage.setItem("productosCarrito", JSON.stringify(productosAgregados));
 }
