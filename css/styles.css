@@ -21,7 +21,7 @@ a {
 .contenedor {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    background-color: rgb(10, 65, 183);
+    background-image: url(../assets/fondoheaderfooter.webp);
 }
 
 aside {
@@ -97,8 +97,8 @@ aside {
 }
 
 .numero {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     padding: 0 0.25rem;
     border-radius: 0.25rem;
 }
@@ -109,7 +109,7 @@ aside {
 }
 
 main {
-    background-color: white;
+    background-image: url(../assets/fondo.webp);
     margin: 1rem;
     margin-left: 0;
     border-radius: 2rem;
@@ -117,7 +117,7 @@ main {
 }
 
 .tituloPrincipal {
-    color: black;
+    color: white;
     margin-bottom: 2rem;
 }
 
@@ -172,7 +172,7 @@ main {
 
 .carritoVacio,
 .carritoCompra {
-    color: rgb(10, 65, 183);
+    color: white;
     margin-top: 40px;
 }
 
@@ -230,7 +230,7 @@ main {
 
 .totalCarrito {
     display: flex;
-    background-color: black;
+    background-color: white;
     padding: 1rem;
     color: rgb(10, 65, 183);
     border-top-left-radius: 1rem;
