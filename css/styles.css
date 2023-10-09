@@ -161,7 +161,7 @@ main {
 .botonAgregar:hover {
     background-color: rgb(10, 65, 183);
     color: white;
-    transition: 2s;
+    transition: 1s;
 }
 
 .contenedorCarrito {
