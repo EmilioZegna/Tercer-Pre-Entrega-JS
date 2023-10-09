@@ -6,7 +6,9 @@ const productosEnCarrito = document.querySelector("#productosCarrito");
 const accionesCarrito = document.querySelector("#accionesCarrito");
 const carritoCompra = document.querySelector("#carritoCompra");
 let botonesEliminar = document.querySelectorAll(".eliminarProducto");
-
+const botonVaciar = document.querySelector("#vaciarCarrito");
+const totalCarrito = document.querySelector("#total");
+const botonComprar = document.querySelector("#comprarCarrito");
 
 function cargarProductosCarrito() {
     if (productosAgregados && productosAgregados.length > 0) {
@@ -53,6 +55,7 @@ function cargarProductosCarrito() {
         carritoCompra.classList.add("desabilitado");
     }
     botonEliminarFuncionando();
+    totalActualizado();
 }
 
 cargarProductosCarrito();
@@ -74,5 +77,32 @@ function eliminarCarrito(e) {
 
     console.log(cargarProductosCarrito);
 
-    localStorage.setItem("productosCarrito", JSON.stringify(productosAgregados));
+    localStorage.setItem("productosAgregados", JSON.stringify(productosAgregados));
+}
+
+botonVaciar.addEventListener("click", vaciarCarrito);
+
+function vaciarCarrito() {
+    productosAgregados.length = 0;
+    localStorage.setItem("productosAgregados", JSON.stringify(productosAgregados));
+
+    cargarProductosCarrito();
+}
+
+function totalActualizado() {
+    const calcularTotal = productosAgregados.reduce((acc, producto) => acc + (producto.precio * producto.cantidad), 0);
+    total.innerText = `$${calcularTotal}`;
+}
+
+botonComprar.addEventListener("click", comprarCarrito);
+
+function comprarCarrito() {
+    productosAgregados.length = 0;
+    localStorage.setItem("productosAgregados", JSON.stringify(productosAgregados));
+    
+    carritoVacio.classList.add("desabilitado");
+    productosEnCarrito.classList.add("desabilitado");
+    accionesCarrito.classList.add("desabilitado");
+    carritoCompra.classList.remove("desabilitado");
+    
 }
