@@ -63,7 +63,16 @@ function botonAgregarFuncionando() {
     });
 }
 
-const productosAgregados = [];
+let productosAgregados;
+
+const productosAgregadosLS = JSON.parse(localStorage.getItem("productosAgregados"));
+if (productosAgregadosLS) {
+    productosAgregados = productosAgregadosLS;
+    sumarProductos();
+} else {
+    productosAgregados = [];
+}
+
 
 function agregarCarrito(e) {
     const botonId = e.currentTarget.id;
