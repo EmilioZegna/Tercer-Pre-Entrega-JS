@@ -29,6 +29,8 @@ function cargarProductos(productosSeleccionados) {
         `;
         contenedorProductos.append(div);
     })
+
+    botonAgregarFuncionando();
 }
 
 cargarProductos(productos);
@@ -52,3 +54,26 @@ botonesMenu.forEach(boton => {
     })
 });
 
+function botonAgregarFuncionando() {
+    botonesAgregar = document.querySelectorAll(".botonAgregar");
+
+    botonesAgregar.forEach(boton => {
+        boton.addEventListener("click", agregarCarrito);
+    });
+}
+
+const productosAgregados = [];
+
+function agregarCarrito() {
+    const botonId = e.currentTarget.id;
+    const productoAgregar = productos.find(producto => producto.id === botonId);
+
+    if(productosAgregados.some(producto => producto.id === botonId)) {
+        const index = productosAgregados.findIndex(producto => producto.id === botonId);
+        productosAgregados[index].cantidad++;
+    } else {
+        productoAgregar.cantidad = 1;
+        productosAgregados.push(productoAgregar);
+    }
+
+}
