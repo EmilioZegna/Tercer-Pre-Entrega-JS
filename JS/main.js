@@ -37,15 +37,14 @@ function cargarProductos(productosSeleccionados) {
 cargarProductos(productos);
 
 botonesMenu.forEach(boton => {
-    boton.addEventListener("click", (e) => {
-        const categoriaProductos = productos.find(producto => producto.categoria.id === e.currentTarget.id);
-        console.log(categoriaProductos.categoria);
-        tituloPrincipal.innerText = categoriaProductos.categoria.nombre;
+    boton.addEventListener("click", (e)  => {
         
         botonesMenu.forEach(boton => boton.classList.remove("activo"));
         e.currentTarget.classList.add("activo");
 
         if (e.currentTarget.id != "todos") {
+        const categoriaProductos = productos.find(producto => producto.categoria.id === e.currentTarget.id);
+        tituloPrincipal.innerText = categoriaProductos.categoria.nombre;
         const productosElegidos = productos.filter(producto => producto.categoria.id === e.currentTarget.id);
         cargarProductos(productosElegidos);
         } else {
