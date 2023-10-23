@@ -235,7 +235,7 @@ main {
     color: rgb(10, 65, 183);
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
-    gap: 1rem;
+    gap: 1.1rem;
 }
 
 
@@ -252,3 +252,4 @@ main {
 .desabilitado {
     display: none;
 }
+
