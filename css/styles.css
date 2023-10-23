@@ -253,24 +253,32 @@ main {
     display: none;
 }
 
+.cerrarMenu {
+    display: none;
+}
+
 .desabilitado {
     display: none;
 }
 
 @media screen and (max-width: 600px){
+    
     .contenedor {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
     }
 
     aside {
         position: fixed;
         z-index: 9;
         left: 0;
-        background-image: url(../assets/fondoheaderfooter.webp);
+        background-color: black;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.75);
         transform: translateX(-100%);
         opacity: 0;
         visibility: hidden;
+        transition: 0.3;
     }
 
     .asideVisible {
@@ -306,12 +314,19 @@ main {
         color: white;
     }
 
-    .abrirMenu {
+    .abrirMenu, .cerrarMenu {
         background-color: transparent;
         color: white;
         border: 0;
         font-size: 2rem;
         cursor: pointer;
+    }
+
+    .cerrarMenu {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
     }
 }
 
