@@ -235,7 +235,7 @@ main {
     color: rgb(10, 65, 183);
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
-    gap: 1.1rem;
+    gap: 1rem;
 }
 
 
@@ -249,7 +249,69 @@ main {
     cursor: pointer;
 }
 
+.headerMobile {
+    display: none;
+}
+
 .desabilitado {
     display: none;
+}
+
+@media screen and (max-width: 600px){
+    .contenedor {
+        grid-template-columns: 1fr;
+    }
+
+    aside {
+        position: fixed;
+        z-index: 9;
+        left: 0;
+        background-image: url(../assets/fondoheaderfooter.webp);
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.75);
+        transform: translateX(-100%);
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .asideVisible {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .botones.activo::before,
+    .botones.activo::after {
+        display: none;
+    }
+
+    main {
+        margin: 1rem;
+        margin-top: 0;
+        padding: 2rem;
+    }
+
+    .contenedorProductos {
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .headerMobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .headerMobile .logo {
+        color: white;
+    }
+
+    .abrirMenu {
+        background-color: transparent;
+        color: white;
+        border: 0;
+        font-size: 2rem;
+        cursor: pointer;
+    }
 }
 
