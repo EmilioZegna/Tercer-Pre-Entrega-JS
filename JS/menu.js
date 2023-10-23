@@ -12,4 +12,4 @@ cerrarMenu.addEventListener("click", () => {
 
 botonesMenu.forEach(boton => boton.addEventListener("click", () => {
     aside.classList.remove("asideVisible");
-}));
+}))
