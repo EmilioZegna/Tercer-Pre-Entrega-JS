@@ -77,18 +77,22 @@ if (productosAgregadosLS) {
 
 function agregarCarrito(e) {
     Toastify({
-        text: "This is a toast",
-        duration: 3000,
-        destination: "https://github.com/apvarun/toastify-js",
-        newWindow: true,
+        text: "PRODUCTO AGREGADO",
+        duration: 3500,
         close: true,
         gravity: "top", 
         position: "right", 
-        stopOnFocus: true, // Prevents dismissing of toast on hover
+        stopOnFocus: true, 
         style: {
-          background: "black",
+        background: "url(../assets/fondo.webp)",
+        borderRadius: '2rem',
+        fontSize: '0.75rem'
         },
-        onClick: function(){} // Callback after click
+        offset: {
+            x: '1.5rem',
+            y: '1.5rem'
+        },
+        onClick: function(){} 
       }).showToast();
 
     const botonId = e.currentTarget.id;
