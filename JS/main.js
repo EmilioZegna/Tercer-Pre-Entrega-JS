@@ -76,6 +76,21 @@ if (productosAgregadosLS) {
 
 
 function agregarCarrito(e) {
+    Toastify({
+        text: "This is a toast",
+        duration: 3000,
+        destination: "https://github.com/apvarun/toastify-js",
+        newWindow: true,
+        close: true,
+        gravity: "top", 
+        position: "right", 
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: "black",
+        },
+        onClick: function(){} // Callback after click
+      }).showToast();
+
     const botonId = e.currentTarget.id;
     const productoAgregar = productos.find(producto => producto.id === botonId);
 

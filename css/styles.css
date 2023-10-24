@@ -286,7 +286,7 @@ main {
         position: fixed;
         z-index: 9;
         left: 0;
-        background-color: black;
+        background-image: url(../assets/fondo.webp);
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.75);
         transform: translateX(-100%);
         opacity: 0;
